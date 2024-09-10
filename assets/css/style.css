@@ -1,6 +1,6 @@
 /* This where I style the header */
 header {
-    background-image: url(/streamOnline/assets/images/headerimg3.jpg);
+    background-image: url("/assets/images/headerimg3.jpg");
     width: 100%;
     background-size: cover;
     height: 100vh;
