@@ -1,0 +1,106 @@
+/* This where I style the header */
+header {
+    background-image: url(/streamOnline/assets/images/headerimg3.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+/* This is where I style the nav bar */
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100vw;
+    margin: auto;
+    background-color: #6d7f8770;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-items a {
+    color: rgba(255, 255, 255, 0.822);
+    font-size: small;
+    font-family: myFont;
+    font-weight:550;
+    letter-spacing: 0.5px;
+}
+
+
+/* this is where i style my logo */
+.logo {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 2px;
+}
+
+.logo i {
+    display: flex;
+    justify-content: center;
+    padding-right: 15px;
+    color: #E0C091;
+    font-size: 40px;
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url(/streamOnline/fonts/Photograph\ Signature.ttf);
+}
+
+.samuel {
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-family: logoFont;
+}
+
+.muze {
+    display: flex;
+    
+    color: #E0C091;
+    letter-spacing: 6px;
+    padding-left: 4px;
+
+}
+
+
+
+/* This is where I styled the sign-ups */
+
+.nav-signup {
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.search-icon{
+    color: white;
+}
+.nav-signup a {
+    color: #E0C091;
+}
+
+/* this is where I style the hero */
+
+.hero {
+    width: 50%;
+    margin: auto;
+    padding-top: 15%;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 65px;
+}
+
