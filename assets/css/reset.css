@@ -1,10 +1,11 @@
 @font-face {
     font-family: myFont;
-    src: url(/streamOnline/fonts/Jost-Regular.ttf);
+    src: url("../fonts/Jost-Regular.ttf");
 }
 
 * {
     margin: 0;
+    padding: 0;
     text-decoration: none;
     list-style-type: none;
     font-family: myFont;

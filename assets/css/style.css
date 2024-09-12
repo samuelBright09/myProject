@@ -1,9 +1,10 @@
 /* This where I style the header */
 header {
-    background-image: url("/assets/images/headerimg3.jpg");
+    background-image: url("../images/headerimg4.jpg");
     width: 100%;
     background-size: cover;
     height: 100vh;
+    margin-bottom: 1%;
 }
 
 
@@ -18,20 +19,21 @@ nav {
     position: fixed;
     width: 100vw;
     margin: auto;
-    background-color: #6d7f8770;
+    background-color: #ac2922cc;
 }
 
 .nav-items {
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding: 0;
 }
 
 .nav-items a {
     color: rgba(255, 255, 255, 0.822);
-    font-size: small;
+    font-size: 15px;
     font-family: myFont;
-    font-weight:550;
+    font-weight: 550;
     letter-spacing: 0.5px;
 }
 
@@ -40,38 +42,20 @@ nav {
 .logo {
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: baseline;
     gap: 2px;
+    width: 10%;
 }
 
-.logo i {
+.logo img {
     display: flex;
-    justify-content: center;
-    padding-right: 15px;
-    color: #E0C091;
-    font-size: 40px;
-}
-
-@font-face {
-    font-family: logoFont;
-    src: url(/streamOnline/fonts/Photograph\ Signature.ttf);
-}
-
-.samuel {
-    font-size: 30px;
-    letter-spacing: 5px;
-    font-family: logoFont;
-}
-
-.muze {
-    display: flex;
-    
-    color: #E0C091;
-    letter-spacing: 6px;
-    padding-left: 4px;
+    justify-content: start;
+    align-items: start;
+    width: 60%;
 
 }
+
 
 
 
@@ -84,23 +68,198 @@ nav {
     gap: 60px;
 }
 
-.search-icon{
+.search-icon {
     color: white;
 }
+
 .nav-signup a {
-    color: #E0C091;
+    color: #ffffff;
+    font-size: 25px;
 }
 
 /* this is where I style the hero */
 
+
+
 .hero {
     width: 50%;
-    margin: auto;
+    /* margin: auto; */
+    margin-left: 15%;
     padding-top: 15%;
     color: white;
 }
 
 .hero h1 {
-    font-size: 65px;
+    font-size: 70px;
+    text-transform: uppercase;
+    text-shadow: 2px;
 }
 
+@font-face {
+    font-family: getLost;
+    src: url("../fonts/Photograph\ Signature.ttf");
+}
+
+.hero h3 {
+    font-family: getLost;
+    font-size: 20px;
+    text-align: justify;
+    width: 60%;
+    letter-spacing: 5px;
+
+}
+
+.hero p {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* this is where I style the section */
+
+
+/* this is where i style the latest album view */
+
+
+
+
+
+.latest-album {
+  background-color: rgb(66, 66, 66);
+}
+
+.latest-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+    width: 50%;
+    padding: 20px;
+}
+
+
+
+.latest-album h1 {
+    display: inline;
+    font-size: 50px;
+    color: white;
+}
+
+.latest-album button {
+    display: block;
+    background-color: white;
+}
+
+.latest-text {
+    width: 50%;
+    color: white;
+}
+
+
+.latest-image {
+    width: 60%;
+    /* height: 100%; */
+}
+
+
+.latest-image img {
+    width: 100%;
+    /* max-height: 100%; */
+    border-radius: 5px;
+}
+
+em {
+    color: white;
+    font-size: small;
+}
+
+
+/* this is where i style the song arts and grid */
+
+
+.main-container {
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    padding-top: 1%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 34px;
+    grid-row-gap: 25px;
+}
+
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+
+.grid-container {
+    display: grid;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+
+.album-title {
+    font-weight: 600;
+}
+
+
+.artist-name {
+    font-size: 14px;
+}
+
+hr {
+    width: 85%;
+    margin: auto;
+}
+
+/* This is where I style the subscription */
+
+.subscription {
+    padding: 40px;
+}
+
+.sub-holder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 34px;
+    grid-row-gap: 25px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 1%;
+}
+
+/* this where I style the footer */
+
+
+footer {
+    background-color: #ac2922cc;
+}
+
+
+.footer-mContainer {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    padding: 20px;
+}
+
+
+.logo-container {
+    width: 20%;
+}
+
+.logo-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.sus-updates {
+    
+}
