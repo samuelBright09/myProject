@@ -6,11 +6,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muzedplay</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="./assets/css/reset.css">
+    
     <link rel="stylesheet" href="./assets/css/style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="./assets/javascript/timer.js" defer></script>
 
 </head>
 
@@ -22,7 +29,7 @@
 
             <a class="logo" href="">
 
-                    <img src="./assets/images/muzeplay logo copy.png" alt="">
+                <img src="./assets/images/muzeplay logo copy.png" alt="">
 
             </a>
 
@@ -41,9 +48,12 @@
             <!-- This is the nav bar buttons and search input -->
 
             <div class="nav-signup">
+
+                <input type="text" placeholder="search">
                 <a class="search-icon" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href=""><i class="fa-solid fa-user"></i></a>
             </div>
+
+            <a href=""><i class="fa-solid fa-user  user-account"></i></a>
 
         </nav>
 
@@ -56,7 +66,7 @@
 
             <p>Tell us what kind of music you into we'll find stuff that's right for you!</p>
 
-            <button><a href="">Music</a></button>
+            <button class="music"><a href="">Music</a></button>
             <button class="share"><a href=""><i class="fa-solid fa-share-nodes"></i></a></button>
         </div>
 
@@ -68,33 +78,41 @@
 
         <div class="latest-album">
 
-            <div class="latest-flex">
+            <div data-aos="fade-left" class="latest-flex">
 
                 <div class="latest-text">
 
-                    <h1 class="diff-color1">Latest</h1>
-                    <h1 class="diff-color2">Album</h1>
-                    <p>Stay updated on Travis Greene's sermons by subscribing to his YouTube channel, following him on
+                    <h1 class="diff-color1">Latest<h1 class="diff-color2">Album</h1>
+                    </h1>
+
+                    <p>Stay updated on Louis Armstrong releases by subscribing to his YouTube channel, following him on
                         social media, and checking his website regularly</p>
 
 
-                    <button>Listen to latest Album</button>
+                    <div class="latest-buttons">
+
+                        <button><a href="">Listen to latest Album</a></button>
+
+                        <button class="latest-share"><a href=""><i class="fa-solid fa-share-nodes"></i></a></button>
+
+                    </div>
 
                 </div>
 
-                
 
-                    <div class="latest-image">
-                        <img src="./assets/images/diskreader.jpg" alt="photo of latest album">
-                        <i class="fa-solid fa-download"></i>
 
-                        <figcaption><em>What wonderful world: Louis Armstrong</em></figcaption>
-                        
-                    </div>
+                <div class="latest-image">
 
-                    
+                    <img src="./assets/images/Latest-album.jpg" alt="photo of latest album">
+                    <i class="fa-solid fa-download"></i>
 
-                
+                    <figcaption><em>What wonderful world: Louis Armstrong</em></figcaption>
+
+                </div>
+
+
+
+
 
 
             </div>
@@ -103,11 +121,15 @@
 
         <!-- This is where I create individual song tables -->
 
-        <h1>LISTEN WITHOUT LIMITS</h1>
+        <div class="Listen">
+
+            <h1>LISTEN WITHOUT LIMITS</h1>
+
+        </div>
 
         <div class="main-container">
 
-            <a href="">
+            <a data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -127,7 +149,7 @@
 
             </a>
 
-            <a href="">
+            <a data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -146,7 +168,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -166,7 +188,7 @@
 
             </a>
 
-            <a href="">
+            <a data-aos="fade-up"  href="">
 
                 <div class="grid-container">
 
@@ -185,7 +207,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -204,7 +226,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -223,7 +245,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -242,7 +264,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -261,7 +283,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -280,7 +302,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -299,7 +321,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -320,7 +342,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -339,7 +361,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -358,7 +380,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -377,7 +399,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -397,7 +419,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -416,7 +438,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -435,7 +457,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -454,7 +476,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -473,7 +495,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -492,7 +514,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -512,7 +534,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -532,7 +554,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -551,7 +573,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -570,7 +592,7 @@
 
             </a>
 
-            <a href="">
+            <a  data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -589,7 +611,7 @@
 
             </a>
 
-            <a href="">
+            <a data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -608,7 +630,7 @@
 
             </a>
 
-            <a href="">
+            <a data-aos="fade-up" href="">
 
                 <div class="grid-container">
 
@@ -627,7 +649,7 @@
 
             </a>
 
-            <a href="">
+            <a data-aos="fade-up"  href="">
 
                 <div class="grid-container">
 
@@ -651,9 +673,12 @@
         <hr>
 
         <!-- this is where i work on the subscription table -->
+
+        <h1 class="sus-info">Suscribe for unlimited streams</h1>
+
         <div class="subscription">
 
-            <div class="sub-holder">
+            <div data-aos="zoom-in" class="sub-holder">
 
                 <div class="daily">
 
@@ -723,6 +748,66 @@
         </div>
 
 
+        <!-- <div class="reviews-container">
+
+            <div class="reviews-member">
+
+                <div class="r-image">
+
+                    <img src="./assets/images/review-1.jpg" alt="">
+
+                </div>
+
+                <p>dsfghjk,mnbvfgdgfgjm</p>
+
+            </div>
+
+        </div> -->
+
+
+
+        <div class="timer-container">
+
+            <div class="timer-text">
+                <h1>UPCOMING EVENT</h1>
+
+                <p>This October</p>
+
+                <button><a href="">Learn More</a></button>
+
+            </div>
+
+            <div class="timer-image">
+                <img src="/assets/images/New Empire - Band tour poster.jpg" alt="">
+            </div>
+
+            <div class="timer">
+
+                <div>
+                    <p id="days">00</p>
+                    <span>Days</span>
+                </div>
+
+                <div>
+                    <p id="hours">00</p>
+                    <span>Hours</span>
+                </div>
+
+                <div>
+                    <p id="minutes">00</p>
+                    <span>Minutes</span>
+                </div>
+
+                <div>
+                    <p id="seconds">00</p>
+                    <span>Seconds</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
     </section>
 
 
@@ -785,7 +870,30 @@
     </footer>
 
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should tr
+        });
+    </script>
 </body>
 
 </html>
