@@ -5,8 +5,19 @@ header {
     background-size: cover;
     height: 100vh;
     margin-bottom: 1%;
+    border-bottom: solid #bc7a29e3;
 }
 
+
+/* this where i put a body image */
+
+body {
+    background-image: url("../images/pexels-vishnurnair-1105666.jpg");
+    background-attachment: fixed;
+    background-position: cover;
+    image-orientation: flip;
+    
+}
 
 /* This is where I style the nav bar */
 
@@ -20,6 +31,8 @@ nav {
     width: 100vw;
     margin: auto;
     background-color: #ac2922cc;
+    border-bottom: 2px solid rgb(255, 255, 255);
+
 }
 
 .nav-items {
@@ -30,15 +43,40 @@ nav {
 }
 
 .nav-items a {
-    color: rgba(255, 255, 255, 0.822);
+    color: rgb(221, 220, 220);
     font-size: 15px;
     font-family: myFont;
     font-weight: 550;
     letter-spacing: 0.5px;
+    position: relative;
+}
+
+
+.nav-items a:hover {
+    color: #ffffff;
+}
+
+
+.nav-items a::before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #e0b36a;
+    transition: all .5s;
+}
+
+
+.nav-items a:hover::before {
+    width: 100%;
+
 }
 
 
 /* this is where i style my logo */
+
 .logo {
     color: white;
     display: flex;
@@ -64,19 +102,47 @@ nav {
 .nav-signup {
     color: white;
     display: flex;
-    justify-content: center;
-    gap: 60px;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 14px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    /* justify-content: center; */
+    /* gap: 60px; */
 }
 
-.search-icon {
-    color: white;
+
+.nav-signup:hover input {
+    width: 200px;
 }
+
+.nav-signup input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    transition: 1s;
+    background: transparent;
+}
+
+
+.nav-signup a .fa-solid {
+color: #ac2922;
+font-size: 20px;
+}
+
 
 .nav-signup a {
     color: #ffffff;
     font-size: 25px;
 }
 
+
+.user-account {
+    color: white;
+    font-size: 25px;
+}
 /* this is where I style the hero */
 
 
@@ -114,6 +180,25 @@ nav {
     margin-bottom: 20px;
 }
 
+.hero button {
+    background-color: #DC413D;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.share {
+    margin-left: 10px;
+}
+
+.share a {
+    color: white;
+    padding: 5px;
+}
+
+
+
 /* this is where I style the section */
 
 
@@ -124,16 +209,18 @@ nav {
 
 
 .latest-album {
-  background-color: rgb(66, 66, 66);
+  padding: 20px;
+  margin-top: 7%;
 }
+
 
 .latest-flex {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    gap: 20px;
-    width: 50%;
+    gap: 30px;
+    width: 80%;
     padding: 20px;
 }
 
@@ -142,7 +229,13 @@ nav {
 .latest-album h1 {
     display: inline;
     font-size: 50px;
-    color: white;
+}
+
+
+
+.diff-color2 {
+    color: #DC413D ;
+    margin-left: 20px;
 }
 
 .latest-album button {
@@ -151,21 +244,60 @@ nav {
 }
 
 .latest-text {
-    width: 50%;
+    width: 30%;
+    color: white;
+    line-height: 1.4;
+}
+
+.latest-text p {
+    margin: auto;
+    line-height: 2;
+    text-align: justify;
+    margin-top: 40px;
+
+}
+
+.latest-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.latest-text button {
+    background-color: none;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    background-color: #dc423dd7;
+}
+
+
+.latest-share i {
+    margin-left: 10px;
+    padding: 1px 15px 1px 5px ;
+    
+
+}
+
+.latest-text a {
     color: white;
 }
 
 
 .latest-image {
-    width: 60%;
-    /* height: 100%; */
+    width: 20%;
+}
+
+.latest-image i {
+    color: white;
 }
 
 
 .latest-image img {
-    width: 100%;
-    /* max-height: 100%; */
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 5px;
+    border: solid white;
 }
 
 em {
@@ -174,7 +306,15 @@ em {
 }
 
 
-/* this is where i style the song arts and grid */
+/* this is where i style the song tables */
+
+.Listen h1 {
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 20px;
+    font-size: 30px;
+}
 
 
 .main-container {
@@ -189,11 +329,17 @@ em {
     grid-row-gap: 25px;
 }
 
+.main-container a {
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+}
+
 
 .image-container img {
     max-width: 100%;
     max-height: 100%;
     border-radius: 10px;
+    border: solid rgba(255, 255, 255, 0.753);
 }
 
 
@@ -201,6 +347,13 @@ em {
     display: grid;
     gap: 18px;
     margin-bottom: 20px;
+    transition: 1s;
+}
+
+.grid-container:hover {
+    transform: scale(1.3);
+    box-shadow: #3d3d3d;
+     
 }
 
 
@@ -220,6 +373,13 @@ hr {
 
 /* This is where I style the subscription */
 
+.sus-info {
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+}
+
+
 .subscription {
     padding: 40px;
 }
@@ -228,18 +388,47 @@ hr {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 34px;
-    grid-row-gap: 25px;
+    grid-column-gap: 3px;
+    grid-row-gap: 0px;
     width: 50%;
     margin: auto;
     box-shadow: 1%;
+    color: #ffffff;
+}
+
+
+.daily, .monthly, .lifetime {
+    border: 2px solid white;
+    border-radius: 20px;
+    display: grid;
+    text-align: center;
+    padding: 15% 0%;
+}
+
+
+.daily li, .monthly li, .lifetime li {
+    margin-top: 50px;
+}
+
+.daily button, .monthly button, .lifetime button {
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #DC413D;
+    margin: 70px 40px;
+
+} 
+
+.daily a, .monthly a, .lifetime a {
+    color: white;
+    letter-spacing: 1px;
 }
 
 /* this where I style the footer */
 
 
 footer {
-    background-color: #ac2922cc;
+    background-color: #ac2922;
 }
 
 
@@ -261,5 +450,58 @@ footer {
 }
 
 .sus-updates {
-    
+    width: 50%;
 }
+
+
+.quick-links h3 {
+    color: white;
+}
+
+
+.quick-links a {
+color: white;
+}
+
+.quick-links h3 {
+    color: #000000;
+    font-size: 22px;
+}
+
+
+/* this is where i style the timer */
+
+.timer-container {
+    background-color: #6d6d6d;
+    display: flex;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.timer div {
+flex-basis: 100px;
+}
+
+
+
+
+
+
+
+/* This is where I style the footer socials */
+
+.socials i {
+    color: white;
+    margin-top: 30px;
+}
+
+.music a {
+    color: white;
+}
+
+
+
